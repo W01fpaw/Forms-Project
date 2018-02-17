@@ -24,5 +24,11 @@ Route::get('/contact', function () {
 });
 
 Route::post('/contact', function () {
-    return view('welcome');
+
+    $data = request()->all();
+
+    echo "Email: ". $data['email'] . '<br>';
+    echo "Subject: ". $data['subject'] . '<br>';
+    echo "Message: ". $data['body'];
+
 });
