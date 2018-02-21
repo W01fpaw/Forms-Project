@@ -27,10 +27,10 @@
                 <a class="nav-link" href="#">View Messages</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Create Account</a>
+                <a class="nav-link" href="/create_account">Create Account</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Sign In</a>
+                <a class="nav-link" href="/log_in">Log In</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Log Out</a>

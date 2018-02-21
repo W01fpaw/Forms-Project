@@ -19,6 +19,14 @@ Route::get('/about', function () {
     return view('pages.about');
 });
 
+Route::get('/create_account', function () {
+    return view('pages.create_account');
+});
+
+Route::get('/log_in', function () {
+    return view('pages.log_in');
+});
+
 Route::get('/contact', function () {
     return view('pages.contact');
 });
