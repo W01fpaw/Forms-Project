@@ -11,32 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-});
+Route::get('/', 'PagesController@home')->name('home');
 
-Route::get('/about', function () {
-    return view('pages.about');
-});
+Route::get('/about', 'PagesController@about')->name('about');
 
-Route::get('/create_account', function () {
-    return view('pages.create_account');
-});
+Route::get('/contact', 'PagesController@contact')->name('contact');
 
-Route::get('/log_in', function () {
-    return view('pages.log_in');
-});
+Route::post('/contact', 'PagesController@store')->name('contact.store');
 
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
+Route::get('/thanks/{name}', 'PagesController@thanks')->name('thanks');
 
-Route::post('/contact', function () {
+Route::get('/create_account', 'PagesController@create_account')->name('create_account');
 
-    $data = request()->all();
-
-    echo "Email: ". $data['email'] . '<br>';
-    echo "Subject: ". $data['subject'] . '<br>';
-    echo "Message: ". $data['body'];
-
-});
+Route::get('/log_in', 'PagesController@log_in')->name('log_in');

@@ -7,30 +7,25 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
+                <a class="nav-link" href="{{route('about')}}">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
+                <a class="nav-link" href="{{route('contact')}}">Contact</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('thanks',['name' => 'IS601'])}}">Thanks</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">View Messages</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/create_account">Create Account</a>
+                <a class="nav-link" href="{{route('create_account')}}">Create Account</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/log_in">Log In</a>
+                <a class="nav-link" href="{{route('log_in')}}">Log In</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Log Out</a>

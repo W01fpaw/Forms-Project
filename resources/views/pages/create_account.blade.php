@@ -7,11 +7,11 @@
             <p class="lead">Please use this form to create a site account.</p></div>
 
         <div class="card-body">
-            <form action="/contact" method="post">
+            <form action="" method="post">
                 {{ csrf_field() }}
                 <div class="form-group">
-                    <label for="name">Username</label>
-                    <input name="name" type="text" class="form-control" placeholder="Username ">
+                    <label for="name">Name</label>
+                    <input name="name" type="text" class="form-control" placeholder="Name ">
                 </div>
                 <div class="form-group">
                     <label for="email">Email Address</label>
