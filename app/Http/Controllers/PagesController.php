@@ -36,4 +36,7 @@ class PagesController extends Controller
     function log_in() {
         return view('pages.log_in');
     }
+    function message_view() {
+        return view('pages.message_view');
+    }
 }

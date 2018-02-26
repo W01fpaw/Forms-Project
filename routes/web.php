@@ -24,3 +24,6 @@ Route::get('/thanks/{name}', 'PagesController@thanks')->name('thanks');
 Route::get('/create_account', 'PagesController@create_account')->name('create_account');
 
 Route::get('/log_in', 'PagesController@log_in')->name('log_in');
+
+Route::get('/message_view', 'PagesController@message_view')->name('message_view');
+

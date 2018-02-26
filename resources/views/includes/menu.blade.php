@@ -19,7 +19,7 @@
                 <a class="nav-link" href="{{route('thanks',['name' => 'IS601'])}}">Thanks</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">View Messages</a>
+                <a class="nav-link" href="{{route('message_view')}}">View Messages</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{{route('create_account')}}">Create Account</a>
